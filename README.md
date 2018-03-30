@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/AlisProject/private-chain-contracts.svg?style=svg)](https://circleci.com/gh/AlisProject/private-chain-contracts)
+
 # Private chain contracts
 Contracts for the ALIS PoA Private chain.  
 
