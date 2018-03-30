@@ -2,6 +2,7 @@
 /node_modules
 /installed_contracts
 .idea
+yarn-error.log
 
 # tmp file.
 .node-xmlhttprequest*
