@@ -1,9 +1,4 @@
-[![CircleCI](https://circleci.com/gh/AlisProject/private-chain-contracts/tree/master.svg?style=svg)](https://circleci.com/gh/AlisProject/private-chain-contracts/tree/master)  
-  
-# ICO Contracts
-[![ALIS](https://alismedia.jp/img/logo.png)](https://alismedia.jp)
-
-
+# Private chain contracts
 Contracts for the ALIS PoA Private chain.  
 
 # Prerequisite 
@@ -33,19 +28,6 @@ Contracts for the ALIS PoA Private chain.
 
 # Deployment
 You should adjust `gas` and `gasPrice` at `truffle.js`.
-
-## Using private net(geth)
-Prerequisite: geth, MIST or EtherumWallet.  
-In case of MAC.
-
-1. `cd config`
-1. `mkdir datadir`
-1. `geth init private.genesis.json --datadir ./datadir/`
-1. Run private net.
-
-        geth --datadir ./datadir --networkid 10 --ipcpath /Users/USERNAME/Library/Ethereum/geth.ipc \
-        --rpc --rpcaddr "localhost" --rpcport "8545" --rpccorsdomain "*" --mine --minerthreads 4 --unlock 0,1 \
-        console 2>> /tmp/geth.log
 
 ## Private net & Test net
 - `yarn deploy`
