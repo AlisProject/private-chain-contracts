@@ -1,0 +1,41 @@
+{
+  "name": "private-chain-contracts",
+  "version": "1.0.0",
+  "description": "Contracts for ALIS PoA Private chain.",
+  "main": "truffle.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlisProject/private-chain-contracts.git"
+  },
+  "homepage": "https://github.com/AlisProject/private-chain-contracts",
+  "author": "sot528 <sot528@gmail.com>",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "chai": "^4.1.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.1",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.7.0",
+    "ganache-cli": "^6.1.0",
+    "solium": "^1.1.6",
+    "truffle": "^3.4.7"
+  },
+  "scripts": {
+    "test": "scripts/test.sh",
+    "test:all": "scripts/test.sh ./test/*.js",
+    "debug": "scripts/debug.sh",
+    "lint:sol": "yarn run solium -- --dir ./contracts",
+    "lint": "yarn run eslint . -- --fix && yarn lint:sol",
+    "compile": "rm -rf ./build/* && truffle compile",
+    "clean": "rm -rf ./build/* && yarn truffle networks --clean",
+    "rpc": "yarn run ganache-cli -a 3 -i 10 -u 0 -u 1 -u 2",
+    "deploy": "yarn run clean && yarn truffle compile && truffle deploy --network development"
+  }
+}

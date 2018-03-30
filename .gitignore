@@ -1,0 +1,7 @@
+/build
+/node_modules
+/installed_contracts
+.idea
+
+# tmp file.
+.node-xmlhttprequest*
