@@ -11,7 +11,7 @@
   "author": "sot528 <sot528@gmail.com>",
   "license": "GPL-3.0",
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
+    "babel-eslint": "^8.2.2",
     "babel-polyfill": "^6.23.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
@@ -21,11 +21,11 @@
     "chai-as-promised": "^7.1.1",
     "chai-bignumber": "^2.0.1",
     "eslint": "^4.3.0",
-    "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.7.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.10.0",
     "ganache-cli": "^6.1.0",
     "solium": "^1.1.6",
-    "truffle": "^3.4.7"
+    "truffle": "^4.1.5"
   },
   "scripts": {
     "test": "scripts/test.sh",
