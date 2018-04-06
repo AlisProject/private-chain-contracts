@@ -8,6 +8,13 @@ Contracts for the ALIS PoA Private chain.
     - See: `.node-version`
 - yarn
 
+# Environment valuables
+
+```bash
+# An ETH address to operate private chain.
+export PRIVATE_CHAIN_ALIS_TOKEN_ADDRESS=0x1383b25f9ba231e3a1a1e45c0b5689xxxxxxxxx
+```
+
 # Usage
 
 1. `git clone https://github.com/AlisProject/private-chain-contracts.git`

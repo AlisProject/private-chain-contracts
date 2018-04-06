@@ -3,6 +3,7 @@
 /installed_contracts
 .idea
 yarn-error.log
+.envrc
 
 # tmp file.
 .node-xmlhttprequest*
