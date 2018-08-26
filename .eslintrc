@@ -46,7 +46,8 @@
         "allowForLoopAfterthoughts": true
       }
     ],
-    "no-await-in-loop": "off"
+    "no-await-in-loop": "off",
+    "no-console": "off"
   },
   "globals": {
     "web3": true,
