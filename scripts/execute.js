@@ -1,4 +1,4 @@
-import { web3, AlisToken } from './helper';
+import { AlisToken } from './helper';
 
 const response = AlisToken.owner.call();
 

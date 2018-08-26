@@ -1,11 +1,11 @@
 import { AlisToken } from './helper';
 
-let to = '0xbdb5232157860e22120cd9b9b847ca1024cdb95f';
-let amount = 10000000000000000000; // 10ALIS
+const to = '0xbdb5232157860e22120cd9b9b847ca1024cdb95f';
+const amount = 10000000000000000000; // 10ALIS
 
-let response = AlisToken.transfer.sendTransaction(
+AlisToken.transfer.sendTransaction(
   to, amount, {
-    from: process.env.PRIVATE_CHAIN_MAIN_SIGNER_ADDRESS
+    from: process.env.PRIVATE_CHAIN_MAIN_SIGNER_ADDRESS,
   },
   (error, result) => {
     if (!error) {
@@ -13,5 +13,5 @@ let response = AlisToken.transfer.sendTransaction(
     } else {
       console.log(error);
     }
-  }
+  },
 );
