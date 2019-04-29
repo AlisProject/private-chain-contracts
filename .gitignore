@@ -4,6 +4,8 @@
 .idea
 yarn-error.log
 .envrc
+/scripts/mint.js
 
 # tmp file.
 .node-xmlhttprequest*
+tmp*
