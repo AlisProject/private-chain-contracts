@@ -1,10 +1,10 @@
 import { web3 } from './helper';
 
-const address = process.env.PRIVATE_CHAIN_ALIS_TOKEN_ADDRESS;
+const ADDRESS = process.env.PRIVATE_CHAIN_ALIS_TOKEN_ADDRESS;
 
-const eoa = '0xcdxxxxx.....';
+const EOA = '0xcdxxxxx.....';
 
-const fromBlock = 1;
+const FROM_BLOCK = 1;
 
 const EVENT = 'Mint(address,uint256)';
 
@@ -14,9 +14,9 @@ function padLeft(eoa) {
   return `0x000000000000000000000000${eoa.slice(2)}`;
 }
 
-function removeLeft(eoa) {
-  return `0x${eoa.slice(26)}`;
-}
+// function removeLeft(eoa) {
+//   return `0x${ eoa.slice(26) }`;
+// }
 
 function filterdata(result) {
   for (let i = 0; i < result.length; i++) {
@@ -41,7 +41,7 @@ function getTransferHistory(address, fromBlock, eoa) {
     fromBlock,
     toBlock: 'latest',
     topics: [
-      web3.sha3(EVENT), , padLeft(eoa),
+      web3.sha3(EVENT), null, padLeft(eoa),
     ],
   });
 
@@ -54,4 +54,4 @@ function getTransferHistory(address, fromBlock, eoa) {
   });
 }
 
-getTransferHistory(address, fromBlock, eoa);
+getTransferHistory(ADDRESS, FROM_BLOCK, EOA);
